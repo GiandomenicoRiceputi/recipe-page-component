@@ -1,0 +1,23 @@
+@layer reset, tokens, composition, utilities, blocks;
+
+@import 'reset.css';
+@import 'tokens.css';
+@import 'composition.css';
+@import 'utilities.css';
+
+/* Font Faces */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}

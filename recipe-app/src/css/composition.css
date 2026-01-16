@@ -1,0 +1,28 @@
+@layer composition {
+
+    /* Flow/Stack: Adds space between sibling elements */
+    .flow>*+* {
+        margin-block-start: var(--flow-space, 1em);
+    }
+
+    /* Container: Centers content and constrains width */
+    .container {
+        padding-inline: var(--space-m);
+        margin-inline: auto;
+        max-width: 48rem;
+        /* Approx 768px - adjusted for recipe card */
+    }
+
+    /* Screen Reader Only */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+}

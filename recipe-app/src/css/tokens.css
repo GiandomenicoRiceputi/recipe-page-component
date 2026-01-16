@@ -1,0 +1,49 @@
+@layer tokens {
+    :root {
+        /* Colors */
+        --color-white: hsl(0, 0%, 100%);
+
+        --color-stone-100: hsl(30, 54%, 90%);
+        --color-stone-150: hsl(30, 18%, 87%);
+        --color-stone-600: hsl(30, 10%, 34%);
+        --color-stone-900: hsl(24, 5%, 18%);
+
+        --color-brown-800: hsl(14, 45%, 36%);
+
+        --color-rose-800: hsl(332, 51%, 32%);
+        --color-rose-50: hsl(330, 100%, 98%);
+
+        /* Fonts */
+        --font-serif: 'Young Serif', serif;
+        --font-sans: 'Outfit', sans-serif;
+
+        /* Weights */
+        --font-weight-regular: 400;
+        --font-weight-bold: 700;
+        --font-weight-semibold: 600;
+
+        /* Utopia Fluid Space Scale (approximate for demo) */
+        --space-2xs: clamp(0.5rem, 0.48rem + 0.11vw, 0.56rem);
+        --space-xs: clamp(0.75rem, 0.72rem + 0.16vw, 0.84rem);
+        --space-s: clamp(1rem, 0.96rem + 0.22vw, 1.13rem);
+        --space-m: clamp(1.5rem, 1.43rem + 0.33vw, 1.69rem);
+        --space-l: clamp(2rem, 1.91rem + 0.43vw, 2.25rem);
+        --space-xl: clamp(3rem, 2.87rem + 0.65vw, 3.38rem);
+        --space-2xl: clamp(4rem, 3.83rem + 0.87vw, 4.5rem);
+        --space-3xl: clamp(6rem, 5.74rem + 1.3vw, 6.75rem);
+
+        /* Utopia Fluid Type Scale */
+        --step--2: clamp(0.78rem, 0.77rem + 0.03vw, 0.8rem);
+        --step--1: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+        --step-0: clamp(1.13rem, 1.08rem + 0.22vw, 1.25rem);
+        --step-1: clamp(1.35rem, 1.28rem + 0.37vw, 1.56rem);
+        --step-2: clamp(1.62rem, 1.5rem + 0.58vw, 1.95rem);
+        --step-3: clamp(1.94rem, 1.77rem + 0.87vw, 2.44rem);
+        --step-4: clamp(2.33rem, 2.08rem + 1.25vw, 3.05rem);
+        --step-5: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
+
+        /* Border Radius */
+        --radius-m: 12px;
+        --radius-l: 24px;
+    }
+}
