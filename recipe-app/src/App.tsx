@@ -14,9 +14,11 @@ function App() {
   const [error, setError] = useState<string | null>(null);
 
   // Extended Document interface for View Transitions
-  interface DocumentWithTransition extends Document {
-    startViewTransition?: (callback: () => void) => void;
-  }
+  // Extended Document type for View Transitions
+  // Use intersection and loose types to avoid conflict with built-in Document interface in newer environments
+  type DocumentWithTransition = Document & {
+    startViewTransition?: (callback: () => void) => any;
+  };
 
   const loadRecipe = async (fetcher: () => Promise<Recipe | null>) => {
     const doc = document as DocumentWithTransition;
